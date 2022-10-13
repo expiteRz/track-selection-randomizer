@@ -16,7 +16,7 @@ func main() {
     
     file, err := os.ReadFile("./tracks.txt")
     if err != nil {
-        println("tracks.txt not exists\nPlease decode Common.bmg from CTGPRC, only take track names out and put it into the same directory with ctgprc_tt_track_randomizer.exe")
+        println("tracks.txt not exists\nPlease decode Common.bmg from CTGPRC, only take track names out and put it into the same directory with track-selection-randomizer.exe")
         return
     }
 
