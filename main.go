@@ -17,6 +17,9 @@ func main() {
 	file, err := os.ReadFile("./tracks.txt")
 	if err != nil {
 		println("tracks.txt not exists\nPlease decode Common.bmg from the distribution, only take track names out and put it into the same directory with track-selection-randomizer.exe")
+		fmt.Println("Press any key to exit the program.")
+		scan := bufio.NewScanner(os.Stdin)
+		scan.Scan()
 		return
 	}
 
